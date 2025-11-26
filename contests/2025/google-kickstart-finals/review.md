@@ -1,12 +1,44 @@
-# Review ??Google Kick Start Finals 2025
+# Google Kick Start 2025 – Finals Review
 
-## Summary
-- Team: Team Members: Hongyeol Choi, Benjamin Watson, Timothy Lee
+2025 Google Kick Start Finals는 개인전으로 참가한 대회였고, Google 특유의 알고리즘적 사고 흐름을 스스로 끝까지 이끌어 내야 했던 라운드였다. Apple이나 Meta 대회와 달리 Google Finals는 문제 난도가 주로 “구조를 올바르게 파악할 수 있는가”에 달려 있고, 이 라운드에서도 그 특성이 매우 강하게 나타났다. 팀으로 참가하던 시절에는 누군가 빠르게 구조를 잡아주면 전체 풀이가 훨씬 간단해졌지만, 이번에는 모든 문제의 핵심 인사이트를 혼자서 끝까지 도출해야 했다는 점에서 긴장감이 높았다.
 
-## Strengths
-- Strong communication and strategic splitting.
-- Fast implementation of pattern-matching problems.
+---
 
-## Improvements
-- More consistent checks for corner cases.
-- Better optimization intuition for graph/DP problems.
+## 🔥 문제별 접근과 느낀 점
+
+### **A – Circular Gap Minimization**
+A 문제는 Kick Start 스타일 중 가장 정석적인 형태였다. 평소 많이 경험했던 “정렬 + gap 계산 + binary search” 패턴이라 구조를 파악하는 데 큰 어려움은 없었다. 다만 원형 배열을 다룰 때 실수하기 쉬운 wrap-around 구간 계산을 정확하게 정리한 것이 중요했다. 이 문제를 깔끔하게 풀면서, Finals의 첫 단추를 잘 꿰었다는 자신감이 생겼다.
+
+---
+
+### **B – Forbidden-State Graph Walk**
+B 문제는 이번 라운드에서 ‘구조를 가장 빠르게 이해해야 하는 문제’였다. forbidden 배열이 단순한 boolean이 아니라 사실상 “상태 전이 제한”을 의미한다는 점을 스스로 판단해야 했다. 팀전에서는 이런 직관을 보통 Benjamin이나 Timothy가 매우 빠르게 잡아주곤 해서, 이번에는 이 추상화를 혼자 도출해야 했다는 점이 도전이었다. 그래도 DP 전이에 필요한 조건을 하나씩 정리하면서 문제를 완전히 압축할 수 있었고, 이것이 매우 큰 성취감으로 이어졌다.
+
+---
+
+### **C – Sliding Window Median of Medians**
+Google이 가장 좋아하는 median 문제라 친숙했지만, 구현 난도는 상당히 높았다. low/high multisets의 rebalance 조건을 항상 정확히 유지해야 했고, “메디안의 메디안”이라는 이중 구조 때문에 실수 가능성이 높았다. 하지만 Apple 라운드에서 경험했던 안정적인 구현 경험 덕분에 빠르게 구조를 잡을 수 있었고, 에러 없이 풀이가 마무리되었다. 개인전에서 구현을 안정적으로 처리할 수 있다는 확신을 준 문제였다.
+
+---
+
+### **D – Compressed Automaton Matrix Power**
+가장 어려웠던 문제였다. 상태 압축 → 행렬 구성 → 거듭제곱 → 초기 상태 변환이라는 전체 파이프라인을 스스로 설계해야 했기 때문이다. 특히 DP가 아닌 matrix exponentiation으로 전환해야 한다는 사실을 판별하는 단계가 핵심 인사이트였고, 이 과정을 스스로 도출해야 했다는 점에서 큰 성장 경험이 되었다. 팀전이었다면 보통 벤이 가장 먼저 이런 구조를 포착했을 텐데, 이번에는 완전히 혼자 그 추상화 과정을 끝까지 밀어붙였다는 점이 인상 깊었다.
+
+---
+
+## ⚙️ 개인전으로서의 성장
+
+Kick Start Finals는 알고리즘 구조를 단 몇 분 안에 판단해야 하기 때문에, 팀전과는 전혀 다른 압박이 있다. 이번 라운드에서 나는 다음과 같은 부분에서 크게 성장했다고 느꼈다:
+
+- 복잡한 문제를 스스로 단순화하여 핵심 모델로 정리하는 능력  
+- DP/그리디/행렬 등 서로 다른 알고리즘을 상황에 맞게 선택하는 판단력  
+- 빠르고 안정적인 구현으로 실수 없이 E2E 작업을 마무리하는 역량  
+- 팀원들이 했던 사고 흐름을 혼자서 재현할 수 있는지 확인한 자신감  
+
+Google Finals는 "혼자서도 깊은 구조를 끌어낼 수 있는가"를 측정하는 시험장이었고, 이번 라운드는 그 부분에서 확실한 성장을 보여준 기회였다.
+
+---
+
+## 🏁 결론
+
+2025 Google Kick Start Finals는 단순히 난이도 높은 알고리즘 문제가 아니라, 내 알고리즘적 사고 능력을 스스로 증명하는 라운드였다. 팀전에서 배운 추상화 능력과 실전 구현 감각이 개인전에서도 충분히 통한다는 점을 확인했고, 앞으로 더 고난도의 문제에서도 혼자 구조를 끝까지 완성할 수 있다는 자신감을 얻게 된 대회였다.

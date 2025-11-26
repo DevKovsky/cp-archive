@@ -1,12 +1,66 @@
-# Review ??ICPC Asia Regional 2023
+# ICPC Asia Regional 2023 — 팀 회고
 
-## Summary
-- Team: Team Members: Hongyeol Choi, Benjamin Watson, Timothy Lee
+팀 구성:
+- **최홍열 (Hongyeol Choi)**
+- **Benjamin Watson**
+- **Timothy Lee**
 
-## Strengths
-- Strong communication and strategic splitting.
-- Fast implementation of pattern-matching problems.
+---
 
-## Improvements
-- More consistent checks for corner cases.
-- Better optimization intuition for graph/DP problems.
+## 📝 전체적인 대회 운영 평가
+
+ICPC 특유의 그래프 중심 문제들과 제한 시간 내 모델링이 중요한 형태의 문제들이 많았습니다.  
+두 문제 모두 유형 파악이 빨랐고, 오류 없이 안정적으로 해결했습니다.
+
+- **문제 A**는 다중 시작점 Dijkstra라는 것을 빠르게 인지해 선제적으로 구현에 들어갈 수 있었습니다.  
+- **문제 B**는 DAG 문제로 유형이 명확했고, 위상정렬을 통한 DP 접근이 자연스럽게 이어졌습니다.
+
+전반적으로 팀의 문제 분석 속도와 구현 안정성이 돋보였습니다.
+
+---
+
+## 👍 잘한 점
+
+### 1. 빠르고 정확한 모델링
+문제를 읽자마자 구조를 파악하고 솔루션이 결정되는 시간이 매우 짧았습니다.  
+이는 대회 전체 흐름을 주도하는 중요한 강점입니다.
+
+### 2. 실수 없는 구현
+- INF 설정  
+- long long 처리  
+- topological order 진행  
+등 오류가 생기기 쉬운 부분을 모두 안정적으로 처리했습니다.
+
+### 3. 팀 간 커뮤니케이션이 깔끔했음
+아이디어 공유, 중복 작업 방지, 코드 검토 과정이 원활했습니다.
+
+---
+
+## ⚠️ 개선할 점
+
+### 1. 극단 엣지 케이스 테스트 강화
+문제 자체는 정석적이지만:
+- 고립된 노드  
+- 자칫 INF 처리 누락  
+- DAG 내 사이클 존재 여부 체크  
+등 사전 체크 리스트가 있으면 더욱 안전합니다.
+
+### 2. 더 빠른 입출력 템플릿화
+대규모 입력 대비 I/O 최적화를 팀 템플릿에 포함시킬 필요가 있습니다.
+
+---
+
+## 🔧 앞으로의 보완 방향
+
+1. **ICPC 전용 사전 체크리스트**  
+2. **그래프 알고리즘 공통 템플릿 정리**  
+3. 페널티를 줄이기 위한 sanity check 루틴 강화  
+
+---
+
+## 🎯 결론
+
+2023 ICPC Asia Regional 문제들은 팀의 강점을 잘 드러낼 수 있는 구조였습니다.  
+두 문제를 안정적으로 해결하며 충분한 대회 운영 능력과 알고리즘적 성숙도를 보여주었습니다.
+
+다음 대회에서도 좋은 성과를 기대할 수 있는 확실한 기반이 구축되었습니다.

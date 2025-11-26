@@ -1,12 +1,68 @@
-# Review ??Kaggle Competition 1 (2023)
+# Kaggle Competition 2023 — 팀 회고
 
-## Summary
-- Team: Team Members: Hongyeol Choi, Benjamin Watson, Timothy Lee
+팀 구성:
+- **Hongyeol Choi**
+- **Benjamin Watson**
+- **Timothy Lee**
 
-## Strengths
-- Strong communication and strategic splitting.
-- Fast implementation of pattern-matching problems.
+---
 
-## Improvements
-- More consistent checks for corner cases.
-- Better optimization intuition for graph/DP problems.
+## 📝 전체적인 대회 운영 평가
+
+Kaggle 스타일의 문제들은 단순 알고리즘이 아니라  
+데이터 처리, 스케일링, 통계 계산, 피처 선택, 이상치 탐지 등  
+실제 머신러닝 대회의 핵심 요소들을 담고 있습니다.
+
+우리 팀은 각 분야를 빠르게 분담하여  
+정확한 구현과 효율성을 중심으로 문제를 해결했습니다.
+
+---
+
+## 👍 잘한 점
+
+### 1. 실전 Kaggle 감각 반영
+Sliding window, scaling, correlation matrix 등  
+실제 대회에서 빈번하게 등장하는 패턴을 빠르게 파악했습니다.
+
+### 2. 대규모 입력 처리 능력
+- Deque 기반 윈도우 최적화  
+- 통계 계산 최소화  
+- 메모리 액세스 패턴 최적화  
+등 효율성이 중요한 부분을 잘 처리했습니다.
+
+### 3. 팀 간 협업이 매끄러웠다
+각 문제의 전문성을 기반으로 자연스럽게 역할이 분리되었고  
+전체적으로 작업 속도가 빨랐습니다.
+
+---
+
+## ⚠️ 개선할 점
+
+### 1. 수치 안정성 안정화 작업 필요
+평균/표준편차, IQR 계산 시 float precision 관리가 약간 부족한 부분이 있었습니다.
+
+### 2. Correlation Matrix 최적화
+N×M이 커질 경우 O(M²·N) 계산이 부담되므로  
+block-based 처리가 있었으면 더 좋았습니다.
+
+### 3. Feature Selection의 확장성
+0/1 knapsack 방식 외에도  
+greedy 또는 heuristic 기반 접근도 고려할 수 있습니다.
+
+---
+
+## 🔧 앞으로의 개선 방향
+
+1. **머신러닝 전처리 전용 템플릿** 구축  
+2. **수치 안정성 검증 루틴 강화**  
+3. **대규모 행렬 연산 최적화 패턴 학습**  
+
+---
+
+## 🎯 결론
+
+2023 Kaggle Competition 세트는  
+데이터 처리와 전처리 능력을 확인하는 데 매우 좋은 기회였으며,  
+우리 팀은 정확한 분석과 효율적인 구현으로 문제를 안정적으로 해결했습니다.
+
+앞으로 실제 Kaggle 대회에서도 좋은 성적을 기대할 수 있는 탄탄한 기반이 마련되었습니다.

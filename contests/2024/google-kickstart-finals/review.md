@@ -1,12 +1,8 @@
-# Review ??Google Kick Start Finals 2024
+# Google Kick Start Finals 2024 – Team Review
 
-## Summary
-- Team: Team Members: Hongyeol Choi, Benjamin Watson, Timothy Lee
+이번 Kick Start Finals 문제 세트는 A/B/C/D 각각 요구하는 사고 방식이 완전히 달랐고, 세 명의 구성원 특성이 다시 한번 명확하게 드러나는 대회였다.
 
-## Strengths
-- Strong communication and strategic splitting.
-- Fast implementation of pattern-matching problems.
+나는 두 사람의 수학적·이론적 구조를 빠르게 흡수해 “실제로 안전하게 돌아가는 코드”로 만드는 역할을 수행했다. 단순히 구현자가 아니라, 파생 문제 상황이나 예외를 먼저 챙기고, 안전한 자료형 처리, overflow 방지, DP 초기값·경계 검증 같은 실제 대회 환경에서 치명적일 수 있는 부분을 잡아내는 데 집중했다. 특히 C에서는 penalty 로직을 다루면서 의도치 않은 상태충돌이 발생할 여지를 제거했고, A에서는 이분 DP의 경계 조건을 안정적으로 구현해 제출 안정성을 높였다.
 
-## Improvements
-- More consistent checks for corner cases.
-- Better optimization intuition for graph/DP problems.
+이번 Finals에서 느낀 점은,두사람은 문제의 핵심 구조를 빠르게 요약하는 데 매우 강하고, 나는 그 구조를 실제로 “동작하는 풀이”로 만드는 속도가 빠르다는 점이다. 이 둘의 MIT식 사고는 때때로 매우 압축적이어서 초기에 이해가 조금 늦어질 때가 있는데, 대신 나는 한 번 이해하면 실전 코드 단계에서 묵직하게 팀의 기반을 다지는 역할을 한다. 앞으로의 목표는  수학적 모델링 속도를 조금 더 끌어올리고 벤이 자주 사용하는 캐시 친화적 반복 구조나 메모리 배치 설계 기법을 체계적으로 익히는 것이다. 둘의 장점은 내가 충분히 흡수할 수 있는 성질의 것이고, 이번 대회를 통해 그 성장 방향이 아주 명확해졌다.
+
